@@ -1,0 +1,158 @@
+.profile-page {
+  min-height:  calc(100vh - 110px);
+  background: #f6f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:  20px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 580px;
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= LEFT ================= */
+
+.profile-left {
+  width: 35%;
+  background: linear-gradient(135deg, #42adf5,#64d9f6 );
+  color: white;
+  padding: 30px 25px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-avatar {
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+
+.profile-left h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.profile-left p {
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.profile-info {
+  margin-top: 20px;
+}
+
+.profile-info h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  line-height: 1.7;
+}
+
+/* ================= RIGHT ================= */
+
+.profile-right {
+  flex: 1;
+  padding: 30px 40px;
+}
+
+.profile-right h1 {
+  color: #1E293B;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #64748B;
+  margin-bottom: 30px;
+}
+
+.profile-message {
+  background: #E9D5FF;
+  color: #6D28D9;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.profile-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-right label {
+  margin-bottom: 8px;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.profile-right input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.profile-right input:focus {
+  border-color:#42A5F5;
+  box-shadow: 0 0 8px rgba(58, 94, 237, 0.2);
+}
+
+.profile-right button {
+  margin-top: 22px;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #42adf5, #64e3f6);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-right button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(40, 64, 217, 0.35);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .profile-card {
+    flex-direction: column;
+  }
+
+  .profile-left {
+    width: 100%;
+    padding: 35px 25px;
+  }
+
+  .profile-right {
+    padding: 35px 25px;
+  }
+
+  .profile-right h1 {
+    font-size: 34px;
+  }
+
+  .profile-avatar {
+    font-size: 90px;
+  }
+}

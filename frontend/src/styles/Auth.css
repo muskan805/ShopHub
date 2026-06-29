@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+.auth-container {
+  min-height: 100vh;
+  background: #f4f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card{
+    width:1100px;
+    max-width:95%;
+    
+    display:grid;
+    grid-template-columns:45% 55%;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+}
+
+/* LEFT */
+
+.auth-left {
+  width:100%;
+  padding: 60px 45px;
+  background: linear-gradient(135deg, #3aa5ed, #55b6f7);
+  color: white;
+}
+
+.auth-left h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.auth-left p {
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.shopping-bag {
+  font-size: 110px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.feature {
+  display: flex;
+  gap: 18px;
+  margin-top: 28px;
+  align-items: flex-start;
+}
+
+.feature svg {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.feature h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.feature p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* RIGHT */
+
+.auth-right {
+  width:100%;
+      padding:55px 50px;
+
+}
+
+.auth-right h2 {
+  font-size: 36px;
+  color: #1e293b;
+}
+
+.auth-right h2 span {
+  color: #3a9ced;
+}
+
+.subtitle {
+  margin-top: 10px;
+  margin-bottom: 35px;
+  color: gray;
+}
+
+.error-box {
+  background: #ffe5e5;
+  color: red;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 56px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  outline: none;
+  border-color: #3ab1ed;
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.15);
+}
+
+.icon {
+  position: absolute;
+  left: 18px;
+  top: 19px;
+  color: gray;
+}
+
+.eye {
+  position: absolute;
+  right: 18px;
+  top: 19px;
+  cursor: pointer;
+  color: gray;
+}
+
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+.auth-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.forgot {
+  color: #3abaed;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-btn {
+  width: 100%;
+  height: 58px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3abaed, #55cff7);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(58, 133, 237, 0.3);
+}
+
+.bottom-text {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.bottom-text a {
+  text-decoration: none;
+  color: #3ab1ed;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .auth-card {
+    flex-direction: column;
+  }
+
+  .auth-left,
+  .auth-right {
+    padding: 40px;
+  }
+
+  .shopping-bag {
+    text-align: center;
+  margin: 20px 0;
+}
+  }
+  .shopping-bag h1 {
+  font-size: 45px;
+  margin: 0;
+}
+
+.shopping-bag h2 {
+  margin-top: 8px;
+  font-size:40px;
+    font-weight:700;
+    letter-spacing:1px;
+  
+}
